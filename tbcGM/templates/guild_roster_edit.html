@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilds</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/guild_roster_edit.css' %}">
+</head>
+<body>
+    <div class="navigation">
+        <a href="logout" id="logout">Logout</a>
+        <a href="edit_profile" id="edit_profile">Edit Profile </a> 
+        <h1>FRANKFORT WURLD</h1>
+    </div>
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>Character Name</th>
+                <th>Level</th>
+                <th>Class</th>
+                <th>Rank</th>
+                <th>Attunements</th>
+                <th>Action</th>
+            </tr>
+            <td><a href="member/1">SKbenji</a></td>
+            <td>70</td>
+            <td>Warrior</td>
+            <td>Guild Master</td>
+            <td>
+                <ul>
+                    <li>Serpentshrine Cavern</li>
+                    <li>Karazhan</li>
+                </ul>
+            </td>
+            <td><a href="edit">Edit</a> <a href="delete">Delete</a></td>
+        </table>
+        <hr>
+        <h2>Add Guild Member</h2>
+        <div class="add_players">
+            <form action="add_raider">
+                {% csrf_token %}
+                Character Name: <input type="text">
+                Level: <input type="text" maxlength="2" size="2">
+                Class: <select name="player_class" id="">
+                    <option value="druid">Druid</option>
+                    <option value="hunter">Hunter</option>
+                    <option value="mage">Mage</option>
+                    <option value="paladin">Paladin</option>
+                    <option value="priest">Priest</option>
+                    <option value="rogue">Rogue</option>
+                    <option value="shaman">Shaman</option>
+                    <option value="warlock">Warlock</option>
+                    <option value="warrior">Warrior</option>
+                </select>
+                Rank: <select name="rank">
+                    <option value="officer">Officer</option>
+                    <option value="raider">Raider</option>
+                    <option value="alt">Alternative</option>
+                    <option value="trial">Trial</option>
+                </select>
+                <input type="submit" value="Add Player" class="button">
+            </form>
+        </div>
+    </body>
+</html>

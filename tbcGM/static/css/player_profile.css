@@ -1,0 +1,67 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eeee;
+}
+body{
+    background-color: black;
+    align-content: center;
+}
+
+.container {
+    background-color: #8888;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 400px;
+}
+
+a {
+    color: #2F6B12;
+    text-decoration: none;
+    margin: 15px;
+}
+a:hover{
+    color: #1b8f85;
+}
+#logout {
+    float: right;
+}
+
+#edit_profile{
+    float:right;
+}
+
+.navigation h1 {
+    text-align: center;
+    color: #eeee;
+    font-size: xxx-large;
+    margin: 20px 0px 20px 225px;
+}
+
+.nameplate h1 {
+    color: #eeee;
+    font-size: xxx-large;
+    position: relative;
+    padding-top: 15px;
+    margin-left: 15px;
+    text-decoration: underline #1b8f85;
+}
+
+.nameplate h2 {
+    color: #eeee;
+    position: relative;
+    padding-top: 15px;
+    left: 12%;
+}
+
+.progression {
+    
+}
+
+.nameplate_progression {
+    display: flex;
+}
+
+

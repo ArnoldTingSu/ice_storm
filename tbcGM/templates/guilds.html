@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilds</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/guilds.css' %}">
+</head>
+<body>
+    <div class="navigation">
+        <a href="logout" id="logout">Logout</a>
+        <a href="edit_profile" id="edit_profile">Edit Profile </a> 
+        <h1>GUILDS</h1>
+    </div>
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>Guild Name</th>
+                <th># of Members</th>
+                <th>Guild Leader</th>
+                <th>Progression</th>
+                <th>Action</th>
+            </tr>
+            <td><a href="guild/0/roster">Frankfort Wurld</a></td>
+            <td>120</td>
+            <td>SKbenji</td>
+            <td>Serpentshrine Cavern (6/6)</td>
+            <td><a href="edit">Edit</a> <a href="delete">Delete</a></td>
+        </table>
+        <hr>
+</body>
+</html>

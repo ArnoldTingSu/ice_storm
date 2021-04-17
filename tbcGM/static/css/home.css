@@ -1,0 +1,69 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #eeee;
+    font-size: xxx-large;
+
+}
+#navigation {
+    text-align: center;
+}
+a{
+    color: #2F6B12;
+    text-decoration: none;
+    margin: 15px;
+}
+a:hover{
+    color: #1b8f85;
+}
+
+#login {
+    float: right;
+    padding-top: 10px;
+}
+
+#register{
+    float:left;
+}
+
+body{
+    background-color: black;
+    align-content: center;
+
+}
+.container {
+    background-color: #8888;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 400px;
+
+}
+.navigation a{
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    text-align: center;
+    font-size: xxx-large;
+
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    margin-top: 125px;
+}
+
+.card > form > input {
+    margin-top: 15px;
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px 2px;
+}
