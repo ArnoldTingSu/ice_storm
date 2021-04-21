@@ -13,13 +13,16 @@ body{
     background-color: #8888;
     margin: 0 auto;
     width: 90%;
-    height: 100%;
-    padding-bottom: 400px;
+    height: auto;
+    padding-bottom: 125px;
 }
 
 a {
     color: #2F6B12;
     text-decoration: none;
+}
+
+.navigation a {
     margin: 15px;
 }
 a:hover{
@@ -42,10 +45,9 @@ a:hover{
 
 .nameplate h1 {
     color: #eeee;
-    font-size: xxx-large;
+    font-size: 6rem;
     position: relative;
     padding-top: 15px;
-    margin-left: 15px;
     text-decoration: underline #1b8f85;
 }
 
@@ -53,15 +55,66 @@ a:hover{
     color: #eeee;
     position: relative;
     padding-top: 15px;
-    left: 12%;
+    
 }
 
 .progression {
-    
+    position: relative;
+    left: 33%;
+    margin-top: 50px;
+}
+
+.nameplate {
+    position: relative;
+    left: 15%;
 }
 
 .nameplate_progression {
     display: flex;
+    margin-right:auto;
 }
 
+.raids {
+    border: 2px solid black;
+    margin-top: 5px;
+    padding: 5px;
+}
 
+.raids ul, .wishlist ul {
+    list-style-type: none;
+}
+.wishlist {
+    position: relative;
+}
+.wishlist h3 {
+    color: #eeee;
+    position: relative;
+    margin: 60px 0 2px 0px;
+    width: 200px;
+}
+
+.items {
+    position: relative;
+    padding-left: 5px;
+    border: 2px solid white;
+    width: 225px;
+    height: 100px;
+}
+
+.container a {
+    color: rgb(82, 201, 201)
+
+}
+
+.attunement_progress h3 {
+    margin-top: 10px;
+}
+
+.attunements {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.guild_card {
+    margin-top: 25px;
+}
