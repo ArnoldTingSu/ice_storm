@@ -21,3 +21,6 @@ def guild_roster_edit(request, guild_id):
 
 def player_profile(request, guild_id, player_id):
     return render(request, 'player_profile.html')
+
+def karazhan(request):
+    return render(request, 'karazhan.html')
