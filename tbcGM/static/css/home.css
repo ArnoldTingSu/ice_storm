@@ -23,7 +23,6 @@ a:hover{
 
 #login {
     float: right;
-    padding-top: 10px;
 }
 
 #register{
@@ -36,11 +35,12 @@ body{
 
 }
 .container {
-    background-color: #8888;
+    position: sticky;
+    background-image: url("/static/images/illidan.jpg");
+    background-size: cover;
     margin: 0 auto;
-    width: 90%;
-    height: 100%;
-    padding-bottom: 400px;
+    height: 650px;
+    width: auto;
 
 }
 .navigation a{
@@ -54,15 +54,17 @@ h1 {
 }
 
 .card {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .card img {
-    margin-top: 125px;
+    left: 50%;
 }
 
 .card > form > input {
-    margin-top: 15px;
+    margin-top: 25px;
+    top: 50%;
     padding: 6px;
     border-radius: 5px;
     box-shadow: 1px 2px 1px 2px;
